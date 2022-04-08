@@ -1,7 +1,7 @@
 
 # More information
 
-[Click]() to see the technical report which could get more information about the project.
+[Click](https://github.com/GeoPregel/GeoPregel/blob/master/technical%20report/GeoPregel_SC22.pdf) to see the technical report which could get more information about the project.
 
 # Welcome to GeoPregel
 
