@@ -586,6 +586,12 @@ under the License.
          <td>Select the message_encode_and_store_type to use</td>
        </tr>
        <tr>
+         <td>Iteration</td>
+         <td>integer</td>
+         <td>20</td>
+         <td>Iteration of pagerank algorithm</td>
+       </tr>
+       <tr>
          <td>giraph.async.message.store.threads</td>
          <td>integer</td>
          <td>0</td>
@@ -922,12 +928,6 @@ under the License.
          <td>Maximum number of attempts a master/worker will retry before killing the job.  This directly maps to the number of map task attempts in Hadoop.</td>
        </tr>
        <tr>
-         <td>pagerankIteration</td>
-         <td>integer</td>
-         <td>20</td>
-         <td>Iteration of pagerank algorithm</td>
-       </tr>
-       <tr>
          <td>giraph.additionalEdgeRequestSize</td>
          <td>float</td>
          <td>0.2</td>
@@ -970,25 +970,25 @@ under the License.
          <td>If request sizes are bigger than the buffer size by this factor warnings are printed to the log and to the command line</td>
        </tr>
        <tr>
-         <td>maxPagerankPresition</td>
-         <td>float</td>
-         <td>500.0</td>
-         <td>max pagerank presition</td>
-       </tr>
-       <tr>
-         <td>minPagerankPresition</td>
+         <td>pagerankLowerBound</td>
          <td>float</td>
          <td>0.15</td>
          <td>min pagerank presition</td>
        </tr>
        <tr>
-         <td>pagerankBudget</td>
+         <td>pagerankUppererBound</td>
+         <td>float</td>
+         <td>500.0</td>
+         <td>max pagerank presition</td>
+       </tr>
+       <tr>
+         <td>privacyBudget</td>
          <td>float</td>
          <td>1.0</td>
          <td>pagerank budget</td>
        </tr>
        <tr>
-         <td>pagerankSamplingRate</td>
+         <td>samplingRate</td>
          <td>float</td>
          <td>1.0</td>
          <td>pagerank sampling rate</td>
@@ -1138,9 +1138,9 @@ under the License.
          <td>If ZOOKEEPER_LIST is not set, then use this directory to manage ZooKeeper</td>
        </tr>
        <tr>
-         <td>privacyperworker</td>
+         <td>privacyLabelPerWorker</td>
          <td>string</td>
-         <td>hahaha</td>
+         <td>none</td>
          <td>privacy per worker</td>
        </tr>
       </table>
