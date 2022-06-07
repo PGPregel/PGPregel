@@ -24,7 +24,7 @@ See [Giraph - Deploying Hadoop](https://giraph.apache.org/quick_start.html#qs_se
 Make sure that all the dependencies are installed and that the versions of dependencies rely on meet the requirements, then you need to run the following commands:
 
 ```bash
-git clone https://github.com/TanHaobin/GeoPregel.git
+git clone https://github.com/GeoPregel/GeoPregel.git
 cd GeoPregel
 mvn -Phadoop_2 -DskipTests clean package
 ```
@@ -32,7 +32,7 @@ mvn -Phadoop_2 -DskipTests clean package
 # Running an example
 
 ```bash
-hadoop jar GeoPregel/geo-pregel-examples/target/geo-pregel-examples-1.4.0-SNAPSHOT-for-hadoop-2.5.1-jar-with-dependencies.jar org.apache.giraph.GiraphRunner org.apache.giraph.examples.SimplePageRankComputation  -vif org.apache.giraph.io.formats.JsonLongDoubleFloatDoubleVertexInputFormat  -vip /input/livejournal_not_map -vof org.apache.giraph.io.formats.IdWithValueTextOutputFormat -op /output -w 5 -ca mapred.job.tracker=master,privacyLabelPerWorker="2 3 1 3 3",Iteration=20,pagerankLowerBound=0.15,pagerankUppererBound=500,samplingRate=0.8  -mc org.apache.giraph.examples.SimplePageRankComputation\$SimplePageRankMasterCompute
+hadoop jar GeoPregel/geo-pregel-examples/target/geo-pregel-examples-1.4.0-SNAPSHOT-for-hadoop-2.5.1-jar-with-dependencies.jar org.apache.giraph.GiraphRunner org.apache.giraph.examples.SimplePageRankComputation  -vif org.apache.giraph.io.formats.JsonLongDoubleFloatDoubleVertexInputFormat  -vip /livejournal_json -vof org.apache.giraph.io.formats.IdWithValueTextOutputFormat -op /output -w 5 -ca mapred.job.tracker=localhost,privacyLabelPerWorker="2 3 1 3 3",pagerankIteration=20,pagerankLowerBound=0.15,pagerankUppererBound=500,samplingRate=0.8  -mc org.apache.giraph.examples.SimplePageRankComputation\$SimplePageRankMasterCompute
 ```
 
 
