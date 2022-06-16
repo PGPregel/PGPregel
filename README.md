@@ -1,8 +1,4 @@
 
-# Technical report
-
-[Click](https://github.com/GeoPregel/GeoPregel/blob/master/technical%20report/GeoPregel_SC22.pdf) to get more information about the project.
-
 # Welcome to GeoPregel
 
 GeoPregel is an end-to-end system that provides privacy-preserving graph processing in geo-distributed DCs with low latency and high utility.  To ensure privacy, GeoPregel smartly integrates Differential Privacy into graph processing systems to preserve good utility and low latency. GeoPregel employs two core techniques, namely sampling and combiners to improve the accuracy of processing results and to reduce the amount of inter-DC data communications while preserving high utility. We implement our design based on the [Giraph](https://giraph.apache.org/) system.
