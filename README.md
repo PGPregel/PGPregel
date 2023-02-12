@@ -44,8 +44,8 @@ PGPregel requires -w (the number of workers in hadoop) as the actual number of m
 - samplingRate: The sampling rate of messages remained during inter-DC communication, within 0.0 to 1.0. 
 
 # To cite PGPregel, please use:
-[PDF](https://github.com/PGPregel/PGPregel/raw/master/PGPregel_SoCC22.pdf)
+
 
 
 Amelie Chi Zhou, Ruibo Qiu, Thomas Lambert, Tristan Allard, Shadi Ibrahim, Amr El Abbadi:
-PGPregel: an end-to-end system for privacy-preserving graph processing in geo-distributed data centers. SoCC 2022: 386-402
+PGPregel: an end-to-end system for privacy-preserving graph processing in geo-distributed data centers. SoCC 2022: 386-402 [[PDF]](https://github.com/PGPregel/PGPregel/raw/master/PGPregel_SoCC22.pdf)
