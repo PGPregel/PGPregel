@@ -1,6 +1,8 @@
 
 # Welcome to PGPregel
 
+
+
 PGPregel is an end-to-end system that provides privacy-preserving graph processing in geo-distributed DCs with low latency and high utility.  To ensure privacy, PGPregel smartly integrates Differential Privacy into graph processing systems to preserve good utility and low latency. PGPregel employs two core techniques, namely sampling and combiners to improve the accuracy of processing results and to reduce the amount of inter-DC data communications while preserving high utility. We implement our design based on the [Giraph](https://giraph.apache.org/) system.
 
 # Getting Started
@@ -40,3 +42,10 @@ PGPregel requires -w (the number of workers in hadoop) as the actual number of m
 - pagerankUppererBound: The upper bound of rank value in pagerank algorithm.
 - privacyBudget: The privacy budget which represent the privacy level(i.e., the lower the privacy budget, the higher privacy protect).
 - samplingRate: The sampling rate of messages remained during inter-DC communication, within 0.0 to 1.0. 
+
+# To cite PGPregel, please use:
+[PDF](https://github.com/PGPregel/PGPregel/raw/master/PGPregel_SoCC22.pdf)
+
+
+Amelie Chi Zhou, Ruibo Qiu, Thomas Lambert, Tristan Allard, Shadi Ibrahim, Amr El Abbadi:
+PGPregel: an end-to-end system for privacy-preserving graph processing in geo-distributed data centers. SoCC 2022: 386-402
